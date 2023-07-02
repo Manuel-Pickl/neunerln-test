@@ -173,7 +173,7 @@ function debug() {
 
 //#endregion publish
 
-let timeout: number
+let timeout: NodeJS.Timeout
 function showOnScreenMessage(message: string) {
   clearTimeout(timeout) // clear previous timeout
 
@@ -185,7 +185,7 @@ function showOnScreenMessage(message: string) {
   }, 2000)
 }
 
-let timeFinish: number
+let timeFinish: NodeJS.Timeout
 
 function showOnFinishMessage(message: string) {
   clearTimeout(timeFinish) // clear previous timeout
